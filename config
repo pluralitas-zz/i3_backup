@@ -190,7 +190,7 @@ bar {
 		font pango: Segoe UI 8
 		colors {
 			background $bg-colour
-			separator $bg-colour
+			separator $inactive-text-colour
 
 			#			border				background			text
 			focused_workspace	$text-colour			$bg-colour			$text-colour
