@@ -9,7 +9,8 @@
 
 ## Requires
 	# feh imagemagick scrot j4-dmenu-desktop i3blocks sakura volumeicon-alsa
-	# use [sudo chroot +x ~/.config/i3/lock.sh] to enable lock screen
+	# use [sudo chmod +x ~/.i3/lock.sh] to enable lock screen
+	# use [sudo chmod +x ~/.i3/mocp.sh] to enable mocp i3blocks script
 	# font awesome
 	# Recommend downloading themes from Noobslab ppa: ultra-flat-theme
 	# Fonts on https://github.com/pluralitas/.fonts
