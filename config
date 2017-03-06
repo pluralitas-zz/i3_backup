@@ -20,22 +20,26 @@ exec_always feh --randomize --bg-scale ~/.i3/wallpaper/*
 
 ## gaps
 gaps inner 10
-gaps outer 10
+gaps outer 3
 smart_gaps on
 
 ## Window colours
-set $bg-colour				#3c3b37
+set $bg-colour					#00868B
 set $inactive-bg-colour			#3c3b37
-set $text-colour			#f3f4f5
-set $inactive-text-colour		#676E7D
 set $urgent-bg-colour			#E53935
+
+set $text-colour				#f3f4f5
+set $urgent-text-colour			#ff00200
+set $header-text-colour			#66cccc
+set $inactive-text-colour		#676E7D
+
 set $indicator-colour			#00ff00
 
-#					border			background		text			indicator
-client.focused				$bg-colour		$bg-colour		$text-colour		$indicator-colour
+#							border				background			text					indicator
+client.focused				$inactive-bg-colour	$inactive-bg-colour	$header-text-colour		$indicator-colour
 client.unfocused			$inactive-bg-colour	$inactive-bg-colour	$inactive-text-colour	$indicator-colour
-client.focused_inactive			$inactive-bg-colour	$inactive-bg-colour	$inactive-text-colour	$indicator-colour
-client.urgent				$urgent-bg-colour	$urgent-bg-colour	$text-colour		$indicator-colour
+client.focused_inactive		$inactive-bg-colour	$inactive-bg-colour	$inactive-text-colour	$indicator-colour
+client.urgent				$inactive-bg-colour	$inactive-bg-colour	$urgent-text-colour		$indicator-colour
 
 #hide edge border indicators
 #hide_edge_borders both
@@ -190,11 +194,11 @@ bar {
 		position top
 		font pango: Segoe UI 8
 		colors {
-			background $bg-colour
+			background $inactive-bg-colour
 			separator $inactive-text-colour
 
-			#			border				background			text
-			focused_workspace	$text-colour			$bg-colour			$text-colour
+			#					border					background				text
+			focused_workspace	$header-text-colour		$inactive-bg-colour		$text-colour
 			inactive_workspace	$inactive-bg-colour		$inactive-bg-colour		$inactive-text-colour
 			urgent_workspace	$urgent-bg-colour		$urgent-bg-colour		$text-colour			
 		}
@@ -269,14 +273,15 @@ for_window [title="Page Unresponsive"] floating enable
 #for_window [title="Nautilus"] floating enable
 
 ## Run on Startup
-exec --no-startup-id nm-applet
-exec --no-startup-id ibus-daemon --xim -d -r
-exec --no-startup-id volumeicon
-exec --no-startup-id "pulseaudio --start"
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id ibus-daemon --xim -d -r
+exec_always --no-startup-id volumeicon
+exec_always --no-startup-id "pulseaudio --start"
+exec_always --no-startup-id xfce4-power-manager
 #exec --no-startup-id libreoffice
-exec --no-startup-id transmission-gtk
-exec --no-startup-id thunar
+#exec --no-startup-id transmission-gtk
+#exec --no-startup-id thunar
 #exec --no-startup-id vlc
 #exec --no-startup-id discord
 #exec --no-startup-id skype
-exec --no-startup-id i3lock -c 000000
+#exec --no-startup-id i3lock -c 000000
