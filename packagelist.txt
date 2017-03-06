@@ -96,6 +96,8 @@ make 4.2.1-1
 man-db 2.7.6.1-2
 man-pages 4.09-1
 mdadm 3.4-1
+moc 1:2.5.2-1
+moc-tray 0.4-3
 modemmanager 1.6.4-1
 nano 2.7.5-1
 net-tools 1.60.20160710git-1
@@ -170,6 +172,7 @@ thunar 1.6.11-1
 transmission-gtk 2.92-5
 ttf-arphic-uming 0.2.20080216.1-5
 ttf-baekmuk 2.2-9
+ttf-font-awesome 4.7.0-1
 ttf-freefont 20120503-4
 ttf-liberation 2.00.1-7
 ttf-ms-fonts 2.0-10
