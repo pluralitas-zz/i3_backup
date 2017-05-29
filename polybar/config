@@ -49,8 +49,8 @@ font-3 = siji:pixelsize=10;1
 font-4 = fontawesome:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = mocp
-modules-right = volume filesystem xbacklight xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center = 
+modules-right = mocp volume filesystem xbacklight xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 5
@@ -96,7 +96,7 @@ mount-0 = /
 ;mount-1 = /home
 ;mount-2 = /var
 
-label-mounted = %mountpoint%: %total%
+label-mounted =   %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -245,11 +245,11 @@ label-disconnected-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 5
 
-date = " %Y-%m-%d, %A"
-;date-alt = " %Y-%m-%d, %A"
+date = " %F, %A"
+;date-alt = " %F, %A"
 
-time = %H:%M %Z
-;time-alt = %H:%M
+time = %R %Z
+;time-alt = 
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -264,9 +264,9 @@ format-volume = <ramp-volume> <bar-volume>
 label-volume = " "
 label-volume-foreground = ${root.foreground}
 
-ramp-volume-0 = " "
-ramp-volume-1 = " "
-ramp-volume-2 = " "
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 ramp-volume-foreground = ${colors.foreground}
 
 format-muted-prefix = " "
@@ -385,6 +385,6 @@ interval = 1
 format = <label>
 format-prefix = "  "
 exec = ~/.i3/polybar/mocp
-click-left = mocp -f
+click-left = mocp -G
 click-right = mocp -r
-click-middle = mocp -P
+;click-middle = mocp -f

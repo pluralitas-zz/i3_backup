@@ -40,10 +40,10 @@ set $inactive-text-colour		#676E7D
 set $indicator-colour			#00ff00
 
 #					border				background			text				indicator
-client.focused				$inactive-bg-colour		$inactive-bg-colour		$header-text-colour		$header-text-colour
-client.unfocused			$inactive-bg-colour		$inactive-bg-colour		$inactive-text-colour		$header-text-colour
-client.focused_inactive			$inactive-bg-colour		$inactive-bg-colour		$inactive-text-colour		$header-text-colour
-client.urgent				$inactive-bg-colour		$inactive-bg-colour		$urgent-text-colour		$header-text-colour
+client.focused				$inactive-bg-colour		$inactive-bg-colour		$header-text-colour		$indicator-colour
+client.unfocused			$inactive-bg-colour		$inactive-bg-colour		$inactive-text-colour		$indicator-colour
+client.focused_inactive			$inactive-bg-colour		$inactive-bg-colour		$inactive-text-colour		$indicator-colour
+client.urgent				$inactive-bg-colour		$inactive-bg-colour		$urgent-text-colour		$indicator-colour
 
 #hide edge border indicators
 #hide_edge_borders both
@@ -261,7 +261,6 @@ assign [class="Okular"] $workspace7
 assign [class="libreoffice-draw"] $workspace6
 assign [class="Gimp-2.8"] $workspace6
 assign [class="Inkscape"] $workspace6
-assign [class="krita"] $workspace6
 
 
 #octave make graphics_toolkit == gnuplot
