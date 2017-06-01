@@ -50,14 +50,14 @@ client.urgent				$inactive-bg-colour		$inactive-bg-colour		$urgent-text-colour		
 
 ## Workspace Name
 set $workspace1 "1 "
-set $workspace2 "2 "
-set $workspace3 "3 "
-set $workspace4 "4 "
-set $workspace5 "5 "
-set $workspace6 "6 "
-set $workspace7 "7 "
-set $workspace8 "8 "
-set $workspace9 "9 "
+set $workspace2 "2 "
+set $workspace3 "3 "
+set $workspace4 "4 "
+set $workspace5 "5 "
+set $workspace6 "6 "
+set $workspace7 "7 "
+set $workspace8 "8 "
+set $workspace9 "9 "
 set $workspace10 "10 "
 
 ## Set Mod Key
@@ -233,44 +233,46 @@ bindsym XF86TouchpadToggle exec /usr/local/bin/toggletouchpad.sh
 #Players
 assign [class="Gnome-mplayer"] $workspace10
 assign [class="Vlc"] $workspace10
-
+assign [class="Pragha"] $workspace10
 
 #communication
-assign [class="discord"] $workspace3
-assign [class="skype"] $workspace3
+assign [class="discord"] $workspace8
+assign [class="skype"] $workspace8
 
 #internet
-assign [class="chromium-browser"] $workspace9
-assign [class="Firefox"] $workspace9
-assign [class="Google-chrome"] $workspace9
+assign [class="chromium-browser"] $workspace2
+assign [class="Firefox"] $workspace2
+assign [class="Google-chrome"] $workspace2
 
 #file browser
-assign [class="Thunar"] $workspace8
-assign [class="libprs500"] $workspace8
+assign [class="Thunar"] $workspace7
+assign [class="libprs500"] $workspace7
+
+#torrent
 assign [class="Transmission-gtk"] $workspace9
+assign [class="qBittorrent"] $workspace9
 
 #office suites
-assign [class="libreoffice-startcenter"] $workspace7
-assign [class="libreoffice-writer"] $workspace7
-assign [class="libreoffice-impress"] $workspace7
-assign [class="libreoffice-calc"] $workspace7
-assign [class="TexMaker"] $workspace7
-assign [class="Okular"] $workspace7
+assign [class="libreoffice-startcenter"] $workspace4
+assign [class="libreoffice-writer"] $workspace4
+assign [class="libreoffice-impress"] $workspace4
+assign [class="libreoffice-calc"] $workspace4
+assign [class="TexMaker"] $workspace4
+assign [class="Okular"] $workspace4
 
 #graphic manipulators
-assign [class="libreoffice-draw"] $workspace6
-assign [class="Gimp-2.8"] $workspace6
-assign [class="Inkscape"] $workspace6
-assign [class="krita"] $workspace6
-
+assign [class="libreoffice-draw"] $workspace5
+assign [class="Gimp-2.8"] $workspace5
+assign [class="Inkscape"] $workspace5
+assign [class="krita"] $workspace5
 
 #octave make graphics_toolkit == gnuplot
-assign [class="Octave-gui"] $workspace5
-assign [class="octave-gui"] $workspace5
-assign [class="Spyder"] $workspace5
+assign [class="Octave-gui"] $workspace6
+assign [class="octave-gui"] $workspace6
+assign [class="Spyder"] $workspace6
 
 #steam
-assign [class="Steam"] $workspace4
+assign [class="Steam"] $workspace3
 
 #Floats
 for_window [class="gnuplot"] floating enable
